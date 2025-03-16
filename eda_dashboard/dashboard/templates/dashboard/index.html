@@ -1,0 +1,14 @@
+{% extends 'dashboard/base_dashboard.html' %}
+
+{% block content %}
+{% load plotly_dash %}
+    <h2>Welcome to the Dashboard</h2>
+    <p>This is the main content area for your data analyzations.</p>
+    <!-- Add your specific content, like Plotly Dash components, here -->
+    {% comment %} <div>
+        {% plotly_app name="SalesHistory" ratio=.5 %}
+    </div> {% endcomment %}
+    <div>
+        {% plotly_app name="UnicornCompanies" ratio=1 %}
+    </div>
+{% endblock %}
